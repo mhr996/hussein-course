@@ -88,16 +88,16 @@ export default function ModalForm({ isOpen, onClose }: ModalFormProps) {
                 <Play className="w-8 h-8 text-white" />
               </div>
 
-              <h2 className="text-3xl font-bold bg-gradient-to-r from-slate-900 via-blue-900 to-purple-900 bg-clip-text text-transparent mb-3">
+              <h2 className="text-xl lg:text-3xl font-bold bg-gradient-to-r from-slate-900 via-blue-900 to-purple-900 bg-clip-text text-transparent mb-3">
                 احصل على الفيديو الكامل
               </h2>
-              <p className="text-slate-600 text-lg">
+              <p className="text-slate-600 lg:text-lg">
                 أدخل بياناتك للحصول على الوصول الفوري
                 <span className="text-emerald-600 font-bold"> مجاناً</span>
               </p>
 
               {/* Trust Badge */}
-              <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full mt-4 text-sm font-medium">
+              <div className="lg:inline-flex hidden items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full mt-4 text-sm font-medium">
                 <CheckCircle className="w-4 h-4" />
                 بيانات آمنة 100%
               </div>
@@ -182,7 +182,7 @@ export default function ModalForm({ isOpen, onClose }: ModalFormProps) {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 disabled:from-gray-400 disabled:to-gray-500 text-white py-5 px-6 rounded-xl font-bold text-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 disabled:transform-none disabled:cursor-not-allowed shadow-xl hover:shadow-2xl"
+                className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 disabled:from-gray-400 disabled:to-gray-500 text-white py-5 px-6 rounded-xl font-bold lg:text-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 disabled:transform-none disabled:cursor-not-allowed shadow-xl hover:shadow-2xl"
               >
                 <div className="flex items-center justify-center gap-3">
                   {isLoading ? (
@@ -193,7 +193,7 @@ export default function ModalForm({ isOpen, onClose }: ModalFormProps) {
                   ) : (
                     <>
                       أرسل واحصل على الفيديو الكامل
-                      <Play className="w-6 h-6" />
+                    
                     </>
                   )}
                 </div>
