@@ -114,7 +114,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
               {/* Video Thumbnail Image */}
               <div className="aspect-video relative">
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=675&fit=crop&q=80"
+                  src="/thumbnail.jpg"
                   alt="استراتيجية البنتاجون"
                   className="w-full h-full object-cover"
                 />

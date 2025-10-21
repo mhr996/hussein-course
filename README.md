@@ -25,11 +25,13 @@ A professional Next.js landing page for Hussein Housh's coaching program featuri
 ## Getting Started
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
 2. Set up environment variables in `.env.local`:
+
 ```bash
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
@@ -39,6 +41,7 @@ NEXT_PUBLIC_CALENDLY_URL=your_calendly_link
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
