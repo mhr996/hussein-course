@@ -7,7 +7,7 @@ DROP POLICY IF EXISTS "Allow public inserts" ON submissions;
 DROP POLICY IF EXISTS "Allow authenticated reads" ON submissions;
 DROP POLICY IF EXISTS "Allow authenticated updates" ON submissions;
 DROP POLICY IF EXISTS "Allow authenticated deletes" ON submissions;
-
+ 
 -- Disable RLS completely (simplest solution for a public form)
 ALTER TABLE submissions DISABLE ROW LEVEL SECURITY;
 
