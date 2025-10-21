@@ -291,16 +291,16 @@ export default function DashboardPage() {
               <table className="w-full">
                 <thead className="bg-slate-50 border-b border-slate-200">
                   <tr>
-                    <th className="px-6 py-4 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                    <th className="px-6 py-4  text-xs font-semibold text-slate-700 uppercase tracking-wider">
                       Name
                     </th>
-                    <th className="px-6 py-4 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                    <th className="px-6 py-4  text-xs font-semibold text-slate-700 uppercase tracking-wider">
                       Email
                     </th>
-                    <th className="px-6 py-4 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                    <th className="px-6 py-4  text-xs font-semibold text-slate-700 uppercase tracking-wider">
                       Phone
                     </th>
-                    <th className="px-6 py-4 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                    <th className="px-6 py-4  text-xs font-semibold text-slate-700 uppercase tracking-wider">
                       Submitted At
                     </th>
                   </tr>
