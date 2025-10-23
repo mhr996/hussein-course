@@ -5,16 +5,18 @@ import { motion } from "framer-motion";
 import { Calendar, CheckCircle, Star, ArrowRight, Phone } from "lucide-react";
 import Footer from "@/components/Footer";
 import CalendlyModal from "@/components/CalendlyModal";
+import ThankYouVideoPopup from "@/components/ThankYouVideoPopup";
 
 // Configuration - Easy to change
 const CONFIG = {
   YOUTUBE_VIDEO_ID: "D1cmKrU09jU", // Replace with actual video ID
   VIDEO_TITLE:
-    "استراتيجية البنتاجون الكاملة - من الصفر إلى 100 ألف دولار شهرياً",
+    "10 دقائق تكفي لتتعلم كيف تحقق دخل ثابت من الاستثمار العقاري في دبي!",
 };
 
 export default function VideoPage() {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [showThankYouVideo, setShowThankYouVideo] = useState(false);
 
   const handleBookAppointment = () => {
     setIsCalendlyOpen(true);
@@ -22,6 +24,12 @@ export default function VideoPage() {
 
   const closeCalendly = () => {
     setIsCalendlyOpen(false);
+    // Show thank you video popup after closing Calendly
+    setShowThankYouVideo(true);
+  };
+
+  const closeThankYouVideo = () => {
+    setShowThankYouVideo(false);
   };
 
   return (
@@ -43,8 +51,8 @@ export default function VideoPage() {
               {CONFIG.VIDEO_TITLE}
             </h1>
             <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto px-2">
-              شاهد الاستراتيجية الكاملة واكتشف الأسرار الخمسة التي غيرت حياة
-              الآلاف من المدربين
+              حتى لو أول مرة بتفكر تستثمر، الورشة هتوريك الخطوات العملية لبداية
+              استثمارك بأمان وثقة.
             </p>
           </motion.div>
 
@@ -76,7 +84,7 @@ export default function VideoPage() {
           >
             <div className="bg-white p-3 sm:p-4 rounded-lg sm:rounded-xl shadow-sm text-center border border-slate-200">
               <div className="text-lg sm:text-2xl font-bold text-blue-600 mb-1">
-                45 دقيقة
+                10 دقائق
               </div>
               <div className="text-xs sm:text-sm text-slate-600">
                 مدة الفيديو
@@ -92,11 +100,9 @@ export default function VideoPage() {
             </div>
             <div className="bg-white p-3 sm:p-4 rounded-lg sm:rounded-xl shadow-sm text-center border border-slate-200">
               <div className="text-lg sm:text-2xl font-bold text-purple-600 mb-1">
-                5 عناصر
+                3 خطوات
               </div>
-              <div className="text-xs sm:text-sm text-slate-600">
-                استراتيجية البنتاجون
-              </div>
+              <div className="text-xs sm:text-sm text-slate-600">خطة عملية</div>
             </div>
           </motion.div>
         </div>
@@ -113,11 +119,11 @@ export default function VideoPage() {
             className="bg-gradient-to-r from-blue-600 to-green-600 p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl text-white text-center shadow-2xl"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
-              هل أعجبتك الاستراتيجية؟
+              جاهز تبدأ؟
             </h2>
             <p className="text-base sm:text-xl mb-6 sm:mb-8 text-blue-100 max-w-2xl mx-auto">
-              احجز استشارة شخصية مجانية مع فريقنا لمناقشة كيفية تطبيق استراتيجية
-              البنتاجون على عملك التدريبي
+              بعد مشاهدة الفيديو، حدد الوقت اللي بناسبك لتبدأ رحلتك الاستثمارية
+              معي خطوة بخطوة.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-8">
@@ -140,7 +146,7 @@ export default function VideoPage() {
               className="w-full sm:w-auto bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 mx-auto"
             >
               <Calendar className="w-5 h-5" />
-              حدد موعد استشارة مجانية
+              احجز مكالمتك المجانية معي الآن
               <ArrowRight className="w-5 h-5" />
             </button>
 
@@ -163,10 +169,10 @@ export default function VideoPage() {
             className="text-center mb-8 sm:mb-12"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4 sm:mb-6">
-              أهم النقاط من الفيديو
+              شو رح تتعلم في الورشة
             </h2>
             <p className="text-base sm:text-lg text-slate-600">
-              مراجعة سريعة للعناصر الخمسة الأساسية
+              نقاط عملية واضحة قابلة للتطبيق فوراً
             </p>
           </motion.div>
 
@@ -174,38 +180,29 @@ export default function VideoPage() {
             {[
               {
                 number: "01",
-                title: "عنصر الحماية",
+                title: "خطة البداية",
                 points: [
-                  "بناء هوية قوية ومميزة",
-                  "حماية من المنافسة المباشرة",
-                  "إنشاء حاجز دخول للمنافسين",
+                  "خطة بسيطة وواضحة للبدء",
+                  "خطوات أولى بدون تعقيد",
+                  "مؤشرات نجاح مبكرة",
                 ],
               },
               {
                 number: "02",
-                title: "عنصر الاستهداف",
+                title: "اختيار المشروع",
                 points: [
-                  "تحديد العميل المثالي بدقة",
-                  "فهم المشاكل والاحتياجات",
-                  "إنشاء رسائل مقنعة ومؤثرة",
+                  "القواعد الأساسية للاختيار الصح",
+                  "كيف تقيّم العوائد والمخاطر",
+                  "أخطاء شائعة يجب تجنبها",
                 ],
               },
               {
                 number: "03",
-                title: "عنصر التسريع",
+                title: "حماية رأس المال",
                 points: [
-                  "أتمتة عمليات المبيعات",
-                  "تحسين قمع التحويل",
-                  "استخدام التقنيات الحديثة",
-                ],
-              },
-              {
-                number: "04",
-                title: "عنصر التوسع",
-                points: [
-                  "زيادة قنوات الوصول",
-                  "بناء شراكات استراتيجية",
-                  "توسيع قاعدة العملاء",
+                  "تحويل الأموال لدخل ثابت",
+                  "تقليل المخاطر",
+                  "نصائح عملية قبل الشراء",
                 ],
               },
             ].map((item, index) => (
@@ -246,6 +243,12 @@ export default function VideoPage() {
 
       {/* Calendly Modal */}
       <CalendlyModal isOpen={isCalendlyOpen} onClose={closeCalendly} />
+
+      {/* Thank You Video Popup */}
+      <ThankYouVideoPopup
+        isOpen={showThankYouVideo}
+        onClose={closeThankYouVideo}
+      />
     </div>
   );
 }

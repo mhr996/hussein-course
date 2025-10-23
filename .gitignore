@@ -26,8 +26,7 @@ README.md
 .DS_Store
 *.pem
 
-# Large image files (optimize before committing)
-public/testimonials/limona.JPG
+content.txt
 
 # debug
 npm-debug.log*

@@ -7,52 +7,34 @@ import {
   Target,
   Brain,
   DollarSign,
-  Users,
   Rocket,
 } from "lucide-react";
 
 const benefits = [
   {
-    icon: Target,
-    title: "عرض يبيع بدون تعب مضاعف",
+    icon: Brain,
+    title: "خطة بداية بسيطة وواضحة",
     description:
-      "تعلم كيف تصمم عروض مقاومة للرفض تحول المتابعين إلى عملاء دافعين",
+      "كيف تبدأ استثمارك بخطة عملية بدون تعقيد—خطوات واضحة من أول يوم",
     gradient: "from-primary to-navy-light",
     image:
       "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&auto=format&fit=crop",
   },
   {
-    icon: Zap,
-    title: "قمع أوتوماتيكي يشتغل لحالو",
-    description: "ابني نظام مبيعات ذكي يحول الزوار إلى عملاء حتى وإنت نايم",
+    icon: Target,
+    title: "اختيار المشروع الصح",
+    description: "القواعد الأساسية لتقييم المشاريع والعوائد والمخاطر بثقة",
     gradient: "from-accent to-success",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
   },
   {
-    icon: Brain,
-    title: "استغلال الذكاء الصناعي لتسريع التسويق",
-    description:
-      "اكتشف أدوات الـ AI السرية اللي بتضاعف فعالية المحتوى والإعلانات",
-    gradient: "from-navy to-primary",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop",
-  },
-  {
     icon: DollarSign,
-    title: "استراتيجية التسعير المربحة",
-    description: "اعرف كيف تحدد أسعار عادلة ومربحة بدون خسارة العملاء",
+    title: "حماية المال وتحويله لدخل ثابت",
+    description: "آليات حماية رأس المال وتحويله لدخل إيجاري مستقر",
     gradient: "from-gold to-warning",
     image:
       "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&auto=format&fit=crop",
-  },
-  {
-    icon: Users,
-    title: "نظام المتابعة الفعال",
-    description: "طرق مجربة للحفاظ على العملاء وزيادة قيمة الشراء المتكرر",
-    gradient: "from-navy-light to-accent",
-    image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop",
   },
 ];
 
@@ -81,16 +63,15 @@ export default function Benefits() {
         >
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-700 to-blue-500 text-white px-6 py-3 rounded-full mb-8 shadow-lg">
             <Zap className="w-5 h-5" />
-            <span className="font-bold">محتوى حصري</span>
+            <span className="font-bold">الورشة — 10 دقائق</span>
           </div>
 
           <h2 className="text-5xl md:text-7xl font-bold text-navy mb-6 leading-tight font-almarai">
-            شو راح تتعلم في هالفيديو؟
+            شو رح تتعلم في الورشة؟
           </h2>
           <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto font-light font-almarai leading-relaxed">
-            استراتيجيات مجربة ومثبتة النتائج من خبراء حققوا
-            <span className="font-bold text-primary"> ملايين الدولارات</span> في
-            المجال التدريبي
+            ثلاث نقاط عملية جاهزة للتطبيق فوراً: خطة البداية، اختيار المشروع،
+            وحماية رأس المال.
           </p>
         </motion.div>
 
@@ -162,10 +143,10 @@ export default function Benefits() {
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 flex items-center justify-center gap-3">
                 <Rocket className="w-10 h-10 text-yellow-400" />
-                كل هذا وأكثر في فيديو واحد مجاني!
+                ابدأ الآن وشاهد الورشة المجانية
               </h3>
               <p className="text-blue-100 text-xl">
-                لا تفوت الفرصة - المحتوى متاح لفترة محدودة فقط
+                10 دقائق فقط — بدون إيميل أو انتظار
               </p>
             </div>
           </div>

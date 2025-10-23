@@ -7,9 +7,8 @@ const steps = [
   {
     icon: Play,
     number: "01",
-    title: "شاهد الفيديو",
-    description:
-      "استثمر 45 دقيقة في مشاهدة الاستراتيجية الكاملة واكتشف الأسرار الخمسة",
+    title: "خطة البداية",
+    description: "تعلم الفكرة الأساسية وخريطة البدء بخطوات بسيطة",
     color: "from-primary to-navy",
     image:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop",
@@ -17,8 +16,8 @@ const steps = [
   {
     icon: BookOpen,
     number: "02",
-    title: "طبق الخريطة",
-    description: "ابدأ بتطبيق العناصر الخمسة خطوة بخطوة حسب الدليل المرفق",
+    title: "اختيار المشروع",
+    description: "اعرف كيف تختار المشروع الصح وتقيّم العوائد والمخاطر",
     color: "from-emerald-500 to-green-600",
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=format&fit=crop",
@@ -26,8 +25,8 @@ const steps = [
   {
     icon: Rocket,
     number: "03",
-    title: "وسّع شغلك",
-    description: "شاهد كيف تتضاعف النتائج وتزيد الأرباح مع كل عنصر تطبقه",
+    title: "التنفيذ الآمن",
+    description: "نصائح عملية لحماية رأس المال والوصول لدخل ثابت",
     color: "from-gold to-orange-600",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&auto=format&fit=crop",
@@ -62,10 +61,10 @@ export default function Steps({ onOpenModal }: StepsProps) {
           className="text-center mb-24"
         >
           <h2 className="text-5xl md:text-7xl font-bold text-navy mb-6">
-            كيف تبدأ رحلتك للنجاح؟
+            ثلاث خطوات عملية — جاهزة للتطبيق
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            ثلاث خطوات بسيطة تفصلك عن تحقيق دخل 6 أرقام من عملك التدريبي
+            خطة البداية • اختيار المشروع • التنفيذ الآمن — بدون تعقيد.
           </p>
         </motion.div>
 
@@ -140,13 +139,13 @@ export default function Steps({ onOpenModal }: StepsProps) {
             className="group relative bg-gradient-to-r from-blue-700 to-blue-500 text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl hover:shadow-primary/50 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105"
           >
             <span className="relative z-10 flex items-center justify-center gap-3">
-              ابدأ الخطوة الأولى الآن
+              شاهد الورشة المجانية الآن
               <Rocket className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
           <p className="text-slate-500 mt-6 text-base">
-            مجاني 100% - بدون التزامات مالية
+            10 دقائق فقط — مجاناً وبدون انتظار
           </p>
         </motion.div>
       </div>

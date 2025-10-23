@@ -16,36 +16,37 @@ import {
 const strategies = [
   {
     icon: Shield,
-    title: "العنصر الأول: الحماية",
-    description: "بناء نظام دفاعي قوي ضد المنافسة وحماية مكانتك في السوق",
+    title: "العنصر الأول: حماية رأس المال",
+    description: "تقليل المخاطر ووضع ضوابط قبل الشراء لضمان بداية آمنة",
     color: "from-primary to-navy-light",
     number: "01",
   },
   {
     icon: Target,
-    title: "العنصر الثاني: الاستهداف",
-    description: "تحديد العميل المثالي بدقة وفهم احتياجاته العميقة",
+    title: "العنصر الثاني: اختيار المشروع",
+    description: "معايير واضحة لاختيار المشروع المناسب وفق العوائد والموقع",
     color: "from-accent to-success",
     number: "02",
   },
   {
     icon: Zap,
     title: "العنصر الثالث: التسريع",
-    description: "أتمتة العمليات وتسريع دورة المبيعات للحصول على نتائج أسرع",
+    description: "تجهيز الأوراق وتنفيذ الإجراءات بخطوات مرتبة ومبسطة",
     color: "from-gold to-warning",
     number: "03",
   },
   {
     icon: Users,
     title: "العنصر الرابع: التوسع",
-    description: "استراتيجيات قابلة للتطوير لزيادة قاعدة العملاء والوصول",
+    description: "بناء محفظة متنوعة لزيادة الاستقرار والدخل الإيجاري",
     color: "from-navy to-primary",
     number: "04",
   },
   {
     icon: TrendingUp,
     title: "العنصر الخامس: النمو",
-    description: "تحسين مستمر وزيادة الأرباح مع الحفاظ على جودة الخدمة",
+    description:
+      "متابعة العوائد وإعادة الاستثمار لزيادة الدخل على المدى المتوسط",
     color: "from-navy-lighter to-accent",
     number: "05",
   },
@@ -83,15 +84,15 @@ export default function AboutMethod() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-orange-500 text-black px-6 py-3 rounded-full mb-8 font-bold shadow-xl">
             <Award className="w-5 h-5" />
-            <span>الاستراتيجية الأكثر فعالية</span>
+            <span>طريقة عمل مجرّبة</span>
           </div>
 
           <h2 className="text-4xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-blue-200 to-cyan-200 bg-clip-text text-transparent">
-            استراتيجية البنتاجون
+            منهج عملي لبداية آمنة
           </h2>
           <p className="text-2xl md:text-3xl text-blue-200 max-w-4xl mx-auto mb-6 font-light">
-            الخريطة السرية المكونة من{" "}
-            <span className="font-bold text-yellow-300">5 عناصر</span>
+            خمس ركائز تُكمل الورشة القصيرة: حماية رأس المال، اختيار المشروع،
+            تنفيذ سريع، توسّع، ونمو.
           </p>
           <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 mx-auto rounded-full mb-8"></div>
 
@@ -188,36 +189,31 @@ export default function AboutMethod() {
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold mb-6 flex items-center justify-center gap-4">
                 <Target className="w-10 h-10 text-yellow-400" />
-                لماذا استراتيجية البنتاجون فعالة؟
+                ليش هالطريقة فعّالة للمستثمرين؟
               </h3>
               <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-                تم تطوير هذه الاستراتيجية بعد دراسة أكثر من{" "}
-                <span className="font-bold text-yellow-300">
-                  1000 مدرب ناجح
-                </span>{" "}
-                وتحليل ما يميز الـ
-                <span className="font-bold text-yellow-300">3%</span> الذين
-                يحققون نجاحاً استثنائياً
+                مبنية على خبرة ميدانية وممارسات آمنة تساعد المبتدئين يبدؤوا
+                بثقة، بخطوات واضحة وقابلة للتطبيق فوراً.
               </p>
 
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20">
                   <div className="text-2xl font-bold text-yellow-300 mb-2">
-                    97%
+                    10
                   </div>
-                  <div className="text-sm">معدل النجاح</div>
+                  <div className="text-sm">دقائق للورشة</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20">
                   <div className="text-2xl font-bold text-yellow-300 mb-2">
-                    45
+                    30–90
                   </div>
-                  <div className="text-sm">يوم للنتائج</div>
+                  <div className="text-sm">يوم لنتائج ملموسة</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20">
                   <div className="text-2xl font-bold text-yellow-300 mb-2">
-                    3000+
+                    +50
                   </div>
-                  <div className="text-sm">مدرب استفاد</div>
+                  <div className="text-sm">حالة تطبيق ناجحة</div>
                 </div>
               </div>
 

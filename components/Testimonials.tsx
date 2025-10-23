@@ -6,26 +6,26 @@ import { Star, Quote, DollarSign } from "lucide-react";
 const testimonials = [
   {
     name: "ريم أحمد",
-    title: "مدربة تربية أسرية",
+    title: "مستثمرة مبتدئة",
     location: "السعودية",
-    text: "بعد 3 شهور من تطبيق استراتيجية البنتاجون، صارت مبيعاتي أكبر بـ10 مرات. النظام واضح وقابل للتطبيق فعلاً!",
-    revenue: "من 3,000 إلى 30,000 دولار شهرياً",
+    text: "الورشة كانت واضحة جدًا. بدأت بخطة بسيطة وبعد شهرين صار عندي أول دخل إيجاري.",
+    revenue: "أول دخل إيجاري خلال 60 يوم",
     image: "/testimonial-1.jpg",
   },
   {
     name: "محمد الرفاعي",
-    title: "مدرب تطوير ذات",
+    title: "بدأ أول استثماره",
     location: "الإمارات",
-    text: "كنت أشتغل 12 ساعة باليوم وما أحقق إلا 5000 دولار بالشهر. الحين بنفس المتابعين أحقق 25,000 دولار والشغل أقل بكتير!",
-    revenue: "من 5,000 إلى 25,000 دولار شهرياً",
+    text: "اتبعت الخطوات الثلاث بالضبط—اختيار المشروع صار أسهل بكثير واتخذت القرار بثقة.",
+    revenue: "اختار مشروعه الأول بثقة",
     image: "/testimonial-2.jpg",
   },
   {
     name: "فاطمة محمود",
-    title: "مدربة صحة ولياقة",
+    title: "باحثة عن دخل ثابت",
     location: "مصر",
-    text: "الاستراتيجية غيرت مفهومي للتسويق بالكامل. أول شهر حققت 15,000 دولار، وهاي أكبر نتيجة في تاريخي!",
-    revenue: "من 800 إلى 15,000 دولار شهرياً",
+    text: "فهمت كيف أحمي رأس المال وأبدأ خطوة خطوة. الآن أعرف الطريق للوصول لدخل ثابت.",
+    revenue: "خطة واضحة لحماية رأس المال",
     image: "/testimonial-3.jpg",
   },
 ];
@@ -42,11 +42,11 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-            نتائج حقيقية من مدربين حقيقيين
+            قصص حقيقية لمستثمرين بدؤوا مع الورشة
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            اكتشف كيف غيرت استراتيجية البنتاجون حياة المئات من المدربين في
-            العالم العربي
+            تجارب مختصرة توضّح أثر الخطوات الثلاث على اتخاذ القرار وبداية الدخل
+            الإيجاري.
           </p>
         </motion.div>
 
@@ -83,8 +83,8 @@ export default function Testimonials() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-2">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-green-400 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-green-400 rounded-full flex items-center justify-center text-white font-bold text-lg ml-4">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>
@@ -109,7 +109,7 @@ export default function Testimonials() {
           className="text-center mt-12"
         >
           <p className="text-slate-600 italic">
-            "هذه شهادات حقيقية من مدربين طبقوا الاستراتيجية بنجاح"
+            هذه شهادات من مستثمرين طبقوا الخطوات الثلاث بنجاح
           </p>
         </motion.div>
       </div>

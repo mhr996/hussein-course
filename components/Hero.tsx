@@ -42,26 +42,20 @@ export default function Hero({ onOpenModal }: HeroProps) {
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 sm:px-6 sm:py-3 mb-6 sm:mb-8">
               <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 flex-shrink-0" />
               <span className="text-xs sm:text-sm font-medium text-white/90">
-                أكثر من 3000 مدرب استفادوا من الاستراتيجية
+                ورشة مجانية — 10 دقائق
               </span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight font-almarai">
-              ليش <span className="text-blue-400">97%</span> من المدربين
-              <br className="hidden sm:block" />
-              ما يوصلوا لــ{" "}
-              <span className="text-blue-400 whitespace-nowrap">
-                $100,000
-              </span>{" "}
-              <br className="sm:hidden" />
-              بالشهر؟
+              3 خطوات لتبدأ استثمارك العقاري في دبي وتحقق دخل حقيقي خلال 10
+              دقائق!
             </h1>
 
             <p className="text-lg sm:text-xl lg:text-2xl text-slate-200 mb-6 sm:mb-8 leading-relaxed font-light font-almarai">
-              <span className="font-bold text-amber-400">حسين حوش</span> يكشف لك
-              استراتيجية البنتاجون المكونة من{" "}
-              <span className="font-bold text-amber-400">5 عناصر</span> لبناء
-              قنوات بيع تجيب نتائج حقيقية
+              أنا <span className="font-bold text-amber-400">حسين حوش</span>،
+              مستشار عقاري معتمد من دائرة الأراضي والأملاك في دبي. خلال السنوات
+              الماضية، ساعدت عشرات المستثمرين يبدؤوا أول استثمار بثقة وبدون
+              أخطاء مكلفة.
             </p>
 
             {/* CTA Button - Visible only on mobile, moved to below video on desktop */}
@@ -71,7 +65,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                 className="w-full sm:w-auto group relative bg-gradient-to-r from-blue-600 to-slate-900 hover:from-blue-700 hover:to-slate-800 text-white px-8 py-4 rounded-full text-base sm:text-lg font-bold shadow-2xl hover:shadow-blue-600/25 transition-all duration-500 transform hover:-translate-y-1 active:scale-95"
               >
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                  شوف الفيديو المجاني
+                  ابدأ الآن وشاهد الورشة
                   <Sparkles className="w-5 h-5" />
                 </span>
               </button>
@@ -85,18 +79,18 @@ export default function Hero({ onOpenModal }: HeroProps) {
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-2 rounded-lg">
                 <Clock className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <span>45 دقيقة فقط</span>
+                <span>10 دقائق فقط</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-2 rounded-lg">
                 <Target className="w-4 h-4 text-blue-400 flex-shrink-0" />
-                <span>نتائج مثبتة</span>
+                <span>مناسب للمبتدئين</span>
               </div>
             </div>
 
             {/* Urgency Text - Visible only on mobile */}
             <p className="lg:hidden text-blue-200 text-sm sm:text-base font-medium text-center sm:text-right flex items-center justify-center sm:justify-start gap-2">
               <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 flex-shrink-0" />
-              عرض محدود - شاهد الآن قبل انتهاء المهلة
+              الورشة مجانية، وعدد المواعيد بعد المشاهدة محدود
             </p>
           </motion.div>
 
@@ -115,7 +109,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
               <div className="aspect-video relative">
                 <img
                   src="/thumbnail.jpg"
-                  alt="استراتيجية البنتاجون"
+                  alt="ورشة الاستثمار العقاري في دبي"
                   className="w-full h-full object-cover"
                 />
 
@@ -138,12 +132,10 @@ export default function Hero({ onOpenModal }: HeroProps) {
                   <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg sm:rounded-xl p-3 sm:p-4">
                     <p className="text-white text-sm sm:text-base lg:text-lg font-bold mb-1 flex items-center gap-2">
                       <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 flex-shrink-0" />
-                      <span className="line-clamp-1">
-                        شاهد الفيديو التشويقي
-                      </span>
+                      <span className="line-clamp-1">لمحة سريعة من الورشة</span>
                     </p>
                     <p className="text-blue-200 text-xs sm:text-sm line-clamp-1">
-                      اكتشف السر الذي غيّر حياة الآلاف من المدربين
+                      تعرف على ما ستتعلمه خلال 10 دقائق
                     </p>
                   </div>
                 </div>
@@ -157,7 +149,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                 className="w-full group relative bg-gradient-to-r from-blue-600 to-slate-900 hover:from-blue-700 hover:to-slate-800 text-white px-10 py-4 rounded-full text-lg font-bold shadow-2xl hover:shadow-blue-600/25 transition-all duration-500 transform hover:-translate-y-1"
               >
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                  شوف الفيديو المجاني
+                  ابدأ الآن وشاهد الورشة
                   <Sparkles className="w-5 h-5" />
                 </span>
               </button>
@@ -169,17 +161,17 @@ export default function Hero({ onOpenModal }: HeroProps) {
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-lg">
                   <Clock className="w-4 h-4 text-amber-400" />
-                  <span>45 دقيقة فقط</span>
+                  <span>10 دقائق فقط</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-lg">
                   <Target className="w-4 h-4 text-blue-400" />
-                  <span>نتائج مثبتة</span>
+                  <span>مناسب للمبتدئين</span>
                 </div>
               </div>
 
               <p className="text-blue-200 text-base font-medium text-center flex items-center justify-center gap-2">
                 <Clock className="w-5 h-5 text-yellow-400" />
-                عرض محدود - شاهد الآن قبل انتهاء المهلة
+                بعد مشاهدة الورشة، احجز موعداً مجانياً — المقاعد محدودة
               </p>
             </div>
 

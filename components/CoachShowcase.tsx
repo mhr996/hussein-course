@@ -6,15 +6,15 @@ import { Users, Award, Star } from "lucide-react";
 export default function CoachShowcase() {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop&q=80",
-      alt: "حسين حوش مع أحد عملائه الناجحين",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=600&fit=crop&q=80",
+      url: "/with-clients/with-client1.jpg",
       alt: "جلسة تدريب مع حسين حوش",
     },
     {
-      url: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop&q=80",
+      url: "/with-clients/with-client2.webp",
+      alt: "حسين حوش مع أحد عملائه الناجحين",
+    },
+    {
+      url: "/with-clients/with-clients.jpg",
       alt: "حسين حوش يساعد المدربين على النجاح",
     },
   ];
@@ -36,7 +36,7 @@ export default function CoachShowcase() {
           <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-6 py-3 mb-6">
             <Award className="w-5 h-5 text-blue-600" />
             <span className="text-sm font-semibold text-blue-900">
-              تعرّف على المدرب
+              تعرّف على المستشار
             </span>
           </div>
 
@@ -45,9 +45,8 @@ export default function CoachShowcase() {
           </h2>
 
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-almarai">
-            خبير استراتيجيات التسويق للمدربين، ساعد أكثر من{" "}
-            <span className="font-bold text-blue-600">3000 مدرب</span> على بناء
-            أعمال ناجحة ومستدامة
+            مستشار عقاري معتمد من دائرة الأراضي والأملاك في دبي — ساعد عشرات
+            المستثمرين يبدؤوا أول استثمار بثقة وبدون أخطاء مكلفة.
           </p>
         </motion.div>
 
