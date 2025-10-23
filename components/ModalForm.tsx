@@ -12,6 +12,7 @@ import {
   Shield,
   Check,
 } from "lucide-react";
+import CountrySelector, { countries, Country } from "./CountrySelector";
 import { saveFormSubmission } from "@/lib/supabaseClient";
 import { useRouter } from "next/navigation";
 
@@ -26,6 +27,9 @@ export default function ModalForm({ isOpen, onClose }: ModalFormProps) {
     email: "",
     phone: "",
   });
+  const [selectedCountry, setSelectedCountry] = useState<Country>(
+    countries.find((c) => c.code === "AE") || countries[0]
+  );
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
@@ -36,7 +40,8 @@ export default function ModalForm({ isOpen, onClose }: ModalFormProps) {
     setError("");
 
     try {
-      await saveFormSubmission(formData);
+      const fullPhone = `${selectedCountry.dialCode}${formData.phone}`;
+      await saveFormSubmission({ ...formData, phone: fullPhone });
       router.push("/video");
     } catch (err) {
       setError("حدث خطأ في الإرسال، يرجى المحاولة مرة أخرى");
@@ -158,8 +163,14 @@ export default function ModalForm({ isOpen, onClose }: ModalFormProps) {
                 >
                   رقم الهاتف *
                 </label>
-                <div className="relative">
-                  <Phone className="absolute right-4 top-4 w-5 h-5 text-blue-500" />
+                <div
+                  className="relative flex items-center border-2 border-gray-200 rounded-xl focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm"
+                  dir="ltr"
+                >
+                  <CountrySelector
+                    value={selectedCountry}
+                    onChange={setSelectedCountry}
+                  />
                   <input
                     type="tel"
                     id="phone"
@@ -167,8 +178,8 @@ export default function ModalForm({ isOpen, onClose }: ModalFormProps) {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full pr-12 pl-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 bg-white/80 backdrop-blur-sm text-lg font-medium"
-                    placeholder="+966 50 123 4567"
+                    className="flex-1 px-4 py-4 border-0 rounded-l-xl focus:outline-none bg-transparent text-lg font-medium"
+                    placeholder="50 123 4567"
                   />
                 </div>
               </div>
@@ -191,10 +202,7 @@ export default function ModalForm({ isOpen, onClose }: ModalFormProps) {
                       جاري الإرسال...
                     </>
                   ) : (
-                    <>
-                      أرسل واحصل على الفيديو الكامل
-                    
-                    </>
+                    <>أرسل واحصل على الفيديو الكامل</>
                   )}
                 </div>
               </button>

@@ -336,7 +336,7 @@ export default function DashboardPage() {
                         <div className="flex items-center gap-2 text-slate-700">
                           <Phone className="w-4 h-4 text-slate-400" />
                           <a
-                            href={`tel:${submission.phone}`}
+                            href={`tel:${submission.phone}`} dir="ltr"
                             className="hover:text-blue-600 transition-colors"
                           >
                             {submission.phone}
