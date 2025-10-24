@@ -10,7 +10,7 @@ const almarai = Almarai({
 });
 
 export const metadata: Metadata = {
-  title: "حسين حوش - استراتيجية البنتاجون للمدربين",
+  title: "حسين حوش - مستشار عقاري",
   description:
     "اكتشف لماذا يفشل 97% من المدربين العرب في تحقيق 100 ألف دولار شهرياً مع حسين حوش",
   keywords:
@@ -32,6 +32,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
+      <head>
+        <link rel="preconnect" href="https://www.youtube.com" />
+        <link rel="preconnect" href="https://i.ytimg.com" />
+        <link rel="dns-prefetch" href="https://www.youtube.com" />
+        <link rel="dns-prefetch" href="https://i.ytimg.com" />
+        <link rel="dns-prefetch" href="https://catamphetamine.gitlab.io" />
+      </head>
       <body className={`${almarai.variable} font-sans antialiased`}>
         {children}
       </body>

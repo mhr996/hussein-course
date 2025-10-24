@@ -2,31 +2,32 @@
 
 import { motion } from "framer-motion";
 import { Star, Quote, DollarSign } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
-    name: "ريم أحمد",
-    title: "مستثمرة مبتدئة",
-    location: "السعودية",
-    text: "الورشة كانت واضحة جدًا. بدأت بخطة بسيطة وبعد شهرين صار عندي أول دخل إيجاري.",
-    revenue: "أول دخل إيجاري خلال 60 يوم",
-    image: "/testimonial-1.jpg",
+    name: "محمد الحاج",
+    title: "المدير العام لشركة محمد الحاج للوساطة العقارية",
+    location: "",
+    text: "صراحة من أبدع الناس اللي عرفتهم، شغله في المجال العقاري استثنائي! حسين ما شاء الله عليه عنده معلومات وخبرات قوية، وأساليبه في تسويق المشاريع دايمًا خارج الصندوق وفعّالة بشكل رهيب ومبدع.",
+    revenue: "",
+    image: "/testimonials/mohammed-haj.webp",
   },
   {
-    name: "محمد الرفاعي",
-    title: "بدأ أول استثماره",
-    location: "الإمارات",
-    text: "اتبعت الخطوات الثلاث بالضبط—اختيار المشروع صار أسهل بكثير واتخذت القرار بثقة.",
-    revenue: "اختار مشروعه الأول بثقة",
-    image: "/testimonial-2.jpg",
+    name: "محمد شانه",
+    title: "المدير التنفيذي لشركة Innovation Experts",
+    location: "",
+    text: "حسين شاب طموح ومجتهد يسعى دائما لاكتساب المعرفة والمهارات الصحيحة وتوظيفها في خدمة متميزة لعملاءه وتقديم الاستشارة الصحيحة للمستثمرين، نتمنى له التوفيق والنجاح.",
+    revenue: "",
+    image: "/testimonials/mohammed-shaneh.webp",
   },
   {
-    name: "فاطمة محمود",
-    title: "باحثة عن دخل ثابت",
-    location: "مصر",
-    text: "فهمت كيف أحمي رأس المال وأبدأ خطوة خطوة. الآن أعرف الطريق للوصول لدخل ثابت.",
-    revenue: "خطة واضحة لحماية رأس المال",
-    image: "/testimonial-3.jpg",
+    name: "ليمونة الصالح",
+    title: "إعلامية سورية",
+    location: "",
+    text: "يسعد أوقاتك استاذ حسين، حابة اتشكرك على تعاملك اللطيف معي والإيضاحات يلي وضحتها لكل استفساراتي حتى لدرجة خلال 24 ساعة فقط قررت سجل على عقار عن طريقك. واليوم أنا كإعلامية بقدر اكتشف الأشخاص المهنيين والصادقين وانت حقيقة منهم.",
+    revenue: "",
+    image: "/testimonials/limona.webp",
   },
 ];
 
@@ -42,11 +43,11 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-            قصص حقيقية لمستثمرين بدؤوا مع الورشة
+            شهادات من شركاء النجاح
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            تجارب مختصرة توضّح أثر الخطوات الثلاث على اتخاذ القرار وبداية الدخل
-            الإيجاري.
+            آراء قادة الأعمال والخبراء في المجال العقاري حول حسين وخبرته
+            المتميزة.
           </p>
         </motion.div>
 
@@ -75,26 +76,37 @@ export default function Testimonials() {
                     />
                   ))}
                 </div>
-                <div className="bg-gradient-to-r from-green-100 to-blue-100 p-3 rounded-lg">
-                  <p className="text-sm font-bold text-green-700 flex items-center gap-2">
-                    <DollarSign className="w-4 h-4" />
-                    {testimonial.revenue}
-                  </p>
-                </div>
+                {testimonial.revenue && (
+                  <div className="bg-gradient-to-r from-green-100 to-blue-100 p-3 rounded-lg">
+                    <p className="text-sm font-bold text-green-700 flex items-center gap-2">
+                      <DollarSign className="w-4 h-4" />
+                      {testimonial.revenue}
+                    </p>
+                  </div>
+                )}
               </div>
 
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-green-400 rounded-full flex items-center justify-center text-white font-bold text-lg ml-4">
-                  {testimonial.name.charAt(0)}
+                <div className="w-14 h-14 min-w-14 rounded-full overflow-hidden ml-3 border-2 border-blue-200 shadow-md">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    width={55}
+                    height={55}
+                    loading="lazy"
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">
                     {testimonial.name}
                   </h4>
                   <p className="text-slate-600 text-sm">{testimonial.title}</p>
-                  <p className="text-slate-500 text-xs">
-                    {testimonial.location}
-                  </p>
+                  {testimonial.location && (
+                    <p className="text-slate-500 text-xs">
+                      {testimonial.location}
+                    </p>
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -109,7 +121,7 @@ export default function Testimonials() {
           className="text-center mt-12"
         >
           <p className="text-slate-600 italic">
-            هذه شهادات من مستثمرين طبقوا الخطوات الثلاث بنجاح
+            شهادات من قادة وخبراء في المجال العقاري
           </p>
         </motion.div>
       </div>

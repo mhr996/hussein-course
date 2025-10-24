@@ -75,6 +75,27 @@ export default function VideoPage() {
             </div>
           </motion.div>
 
+          {/* Direct CTA Button Under Video */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mb-8 sm:mb-12"
+          >
+            <button
+              onClick={handleBookAppointment}
+              className="w-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 text-white px-6 sm:px-8 py-4 sm:py-5 rounded-xl sm:rounded-2xl md:text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3"
+            >
+              <Calendar className="w-6 h-6" />
+              احجز استشارتك المجانية فوراً
+              <ArrowRight className="w-6 h-6" />
+            </button>
+            <p className="text-slate-600 text-sm sm:text-base text-center mt-3 flex items-center justify-center gap-2">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              استشارة مجانية 30 دقيقة - مكالمة مباشرة مع حسين
+            </p>
+          </motion.div>
+
           {/* Video Stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

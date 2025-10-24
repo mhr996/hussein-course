@@ -21,10 +21,8 @@ export default function Header({ onOpenModal }: HeaderProps) {
       const sections = [
         "hero",
         "benefits",
-        "method",
         "coach",
         "testimonials",
-        "steps",
         "faq",
       ];
 
@@ -62,10 +60,8 @@ export default function Header({ onOpenModal }: HeaderProps) {
   const navItems = [
     { id: "hero", label: "الرئيسية" },
     { id: "benefits", label: "الفوائد" },
-    { id: "method", label: "الاستراتيجية" },
     { id: "coach", label: "المدرب" },
     { id: "testimonials", label: "قصص النجاح" },
-    { id: "steps", label: "الخطوات" },
     { id: "faq", label: "الأسئلة الشائعة" },
   ];
 

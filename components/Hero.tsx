@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Play,
   Sparkles,
@@ -107,10 +108,13 @@ export default function Hero({ onOpenModal }: HeroProps) {
             >
               {/* Video Thumbnail Image */}
               <div className="aspect-video relative">
-                <img
+                <Image
                   src="/thumbnail.jpg"
                   alt="ورشة الاستثمار العقاري في دبي"
-                  className="w-full h-full object-cover"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
 
                 {/* Dark Overlay */}

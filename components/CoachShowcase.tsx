@@ -7,15 +7,15 @@ export default function CoachShowcase() {
   const images = [
     {
       url: "/with-clients/with-client1.jpg",
-      alt: "جلسة تدريب مع حسين حوش",
+      alt: "من هولندا إلى دبي قصة نجاح حقيقية!",
     },
     {
       url: "/with-clients/with-client2.webp",
-      alt: "حسين حوش مع أحد عملائه الناجحين",
+      alt: "حسين حوش مع الإعلامية السورية ليمونة الصالح",
     },
     {
       url: "/with-clients/with-clients.jpg",
-      alt: "حسين حوش يساعد المدربين على النجاح",
+      alt: "حسين حوش مع احد عملائه الناجحين",
     },
   ];
 
