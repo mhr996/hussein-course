@@ -100,7 +100,6 @@ export default function AboutMethod() {
           <div className="relative w-48 h-48 mx-auto mb-12">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse-glow opacity-30"></div>
             <div className="absolute inset-4 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center">
-              <span className="text-2xl font-bold">البنتاجون</span>
             </div>
           </div>
         </motion.div>

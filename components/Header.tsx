@@ -18,13 +18,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
       setIsScrolled(window.scrollY > 20);
 
       // Detect active section
-      const sections = [
-        "hero",
-        "benefits",
-        "coach",
-        "testimonials",
-        "faq",
-      ];
+      const sections = ["hero", "benefits", "coach", "testimonials", "faq"];
 
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -106,7 +100,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
                   isScrolled ? "text-slate-600" : "text-blue-200"
                 }`}
               >
-                استراتيجية البنتاجون
+                الورشة العقارية
               </p>
             </div>
           </motion.div>

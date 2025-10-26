@@ -23,9 +23,8 @@ export default function CalendlyModal({ isOpen, onClose }: CalendlyModalProps) {
 
   if (!isOpen) return null;
 
-  // Get Calendly URL from environment variable
-  const calendlyUrl =
-    process.env.NEXT_PUBLIC_CALENDLY_URL || "YOUR_CALENDLY_LINK_HERE";
+  // OnceHub booking page URL
+  const bookingUrl = "https://oncehub.com/PAGE-D0C3BA034E";
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/60 backdrop-blur-sm">
@@ -89,9 +88,7 @@ export default function CalendlyModal({ isOpen, onClose }: CalendlyModalProps) {
         {/* Calendly Widget - Using iframe for better control */}
         <div className="flex-1 bg-slate-50 min-h-0 h-[500px]">
           <iframe
-            src={`${calendlyUrl}?embed_domain=${
-              typeof window !== "undefined" ? window.location.hostname : ""
-            }&embed_type=Inline&hide_gdpr_banner=1&primary_color=2563eb`}
+            src={bookingUrl}
             width="100%"
             height="500px"
             frameBorder="0"

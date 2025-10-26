@@ -50,33 +50,6 @@ export default function CoachShowcase() {
           </p>
         </motion.div>
 
-        {/* Stats Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"
-        >
-          <div className="bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-100 rounded-2xl p-6 text-center">
-            <Users className="w-10 h-10 text-blue-600 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-slate-900 mb-1">3000+</div>
-            <div className="text-slate-600 font-medium">مدرب مُدرَّب</div>
-          </div>
-
-          <div className="bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-100 rounded-2xl p-6 text-center">
-            <Star className="w-10 h-10 text-amber-500 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-slate-900 mb-1">97%</div>
-            <div className="text-slate-600 font-medium">معدل النجاح</div>
-          </div>
-
-          <div className="bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-100 rounded-2xl p-6 text-center">
-            <Award className="w-10 h-10 text-emerald-600 mx-auto mb-3" />
-            <div className="text-3xl font-bold text-slate-900 mb-1">15+</div>
-            <div className="text-slate-600 font-medium">سنة خبرة</div>
-          </div>
-        </motion.div>
-
         {/* Images Grid - 3 Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {images.map((image, index) => (
@@ -120,27 +93,6 @@ export default function CoachShowcase() {
           ))}
         </div>
 
-        {/* Bottom Quote */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-16 text-center"
-        >
-          <div className="max-w-3xl mx-auto bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 rounded-2xl p-8 md:p-10">
-            <div className="text-6xl text-blue-600 mb-4 leading-none">"</div>
-            <p className="text-xl md:text-2xl text-slate-800 font-medium leading-relaxed mb-4 font-almarai">
-              رسالتي هي مساعدة كل مدرب على بناء عمل ناجح ومستدام يحقق التأثير
-              الذي يطمح إليه
-            </p>
-            <div className="flex items-center justify-center gap-3">
-              <div className="h-px w-12 bg-slate-300"></div>
-              <p className="text-lg font-bold text-slate-900">حسين حوش</p>
-              <div className="h-px w-12 bg-slate-300"></div>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       {/* Background Decorative Elements */}

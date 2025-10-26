@@ -66,7 +66,7 @@ export default function VideoPage() {
             <div className="aspect-video">
               <iframe
                 src={`https://www.youtube.com/embed/${CONFIG.YOUTUBE_VIDEO_ID}?autoplay=1&rel=0&modestbranding=1`}
-                title="استراتيجية البنتاجون"
+                title="الورشة العقارية"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
