@@ -139,7 +139,7 @@ export default function Steps({ onOpenModal }: StepsProps) {
             className="group relative bg-gradient-to-r from-blue-700 to-blue-500 text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl hover:shadow-primary/50 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105"
           >
             <span className="relative z-10 flex items-center justify-center gap-3">
-              شاهد الورشة المجانية الآن
+              شاهد الورشة الآن
               <Rocket className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

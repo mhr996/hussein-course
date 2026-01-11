@@ -87,12 +87,12 @@ export default function VideoPage() {
               className="w-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 text-white px-6 sm:px-8 py-4 sm:py-5 rounded-xl sm:rounded-2xl md:text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3"
             >
               <Calendar className="w-6 h-6" />
-              احجز استشارتك المجانية فوراً
+              احجز استشارتك فوراً
               <ArrowRight className="w-6 h-6" />
             </button>
             <p className="text-slate-600 text-sm sm:text-base text-center mt-3 flex items-center justify-center gap-2">
               <CheckCircle className="w-4 h-4 text-green-600" />
-              استشارة مجانية 30 دقيقة - مكالمة مباشرة مع حسين
+              استشارة 30 دقيقة - مكالمة مباشرة مع حسين
             </p>
           </motion.div>
 
@@ -167,13 +167,13 @@ export default function VideoPage() {
               className="w-full sm:w-auto bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 mx-auto"
             >
               <Calendar className="w-5 h-5" />
-              احجز مكالمتك المجانية معي الآن
+              احجز مكالمتك معي الآن
               <ArrowRight className="w-5 h-5" />
             </button>
 
             <p className="text-blue-200 text-xs sm:text-sm mt-3 sm:mt-4 flex items-center justify-center gap-2">
               <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
-              استشارة هاتفية 30 دقيقة - مجانية بالكامل
+              استشارة هاتفية 30 دقيقة
             </p>
           </motion.div>
         </div>

@@ -49,7 +49,7 @@ export default function CalendlyModal({ isOpen, onClose }: CalendlyModalProps) {
                 </div>
                 <div>
                   <h2 className="text-lg sm:text-2xl font-bold leading-tight">
-                    احجز استشارتك المجانية
+                    احجز استشارتك
                   </h2>
                   <p className="text-blue-100 text-xs sm:text-sm">
                     مع حسين حوش
@@ -92,7 +92,7 @@ export default function CalendlyModal({ isOpen, onClose }: CalendlyModalProps) {
             width="100%"
             height="500px"
             frameBorder="0"
-            title="احجز استشارتك المجانية"
+            title="احجز استشارتك "
           ></iframe>
         </div>
 

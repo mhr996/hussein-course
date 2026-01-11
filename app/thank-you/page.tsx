@@ -63,7 +63,7 @@ export default function ThankYouPage() {
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                <span>ستحصل على الهدايا المجانية المذكورة</span>
+                <span>ستحصل على الهدايا المذكورة</span>
               </div>
             </div>
           </motion.div>

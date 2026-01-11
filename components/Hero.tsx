@@ -43,7 +43,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 sm:px-6 sm:py-3 mb-6 sm:mb-8">
               <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 flex-shrink-0" />
               <span className="text-xs sm:text-sm font-medium text-white/90">
-                ورشة مجانية — 10 دقائق
+               10 دقائق
               </span>
             </div>
 
@@ -91,7 +91,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
             {/* Urgency Text - Visible only on mobile */}
             <p className="lg:hidden text-blue-200 text-sm sm:text-base font-medium text-center sm:text-right flex items-center justify-center sm:justify-start gap-2">
               <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 flex-shrink-0" />
-              الورشة مجانية، وعدد المواعيد بعد المشاهدة محدود
+              عدد المواعيد بعد المشاهدة محدود
             </p>
           </motion.div>
 

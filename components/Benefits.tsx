@@ -143,7 +143,7 @@ export default function Benefits() {
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 flex items-center justify-center gap-3">
                 <Rocket className="w-10 h-10 text-yellow-400" />
-                ابدأ الآن وشاهد الورشة المجانية
+                ابدأ الآن وشاهد الورشة
               </h3>
               <p className="text-blue-100 text-xl">
                 10 دقائق فقط — بدون إيميل أو انتظار

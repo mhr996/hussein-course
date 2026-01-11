@@ -20,7 +20,7 @@ To complete the integration, please provide the following information from your 
 
 ### 2. **Preferred Configuration** (Optional but Recommended)
 
-- **Event Name**: What do you want to call this meeting? (e.g., "استشارة مجانية مع حسين حوش")
+- **Event Name**: What do you want to call this meeting? (e.g., "استشارة مع حسين حوش")
 - **Duration**: 30 minutes (as currently configured)
 - **Meeting Platform**: Zoom, Google Meet, Phone, or other?
 
@@ -49,7 +49,7 @@ To complete the integration, please provide the following information from your 
 
 ✅ **Video Page Integration** (`app/video/page.tsx`)
 
-- "حدد موعد استشارة مجانية" button
+- "حدد موعد استشارة " button
 - Opens Calendly modal when clicked
 - Professional CTA section
 
@@ -94,7 +94,7 @@ Once set up, you can easily customize:
 
 After you provide the Calendly link, test:
 
-- [ ] Modal opens when clicking "حدد موعد استشارة مجانية"
+- [ ] Modal opens when clicking "حدد موعد استشارة "
 - [ ] Calendly widget loads properly
 - [ ] Date/time selection works
 - [ ] Form submission works
